@@ -1,0 +1,17 @@
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+
+/* Only for IE6-7 */
+.cf {
+    zoom: 1;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}

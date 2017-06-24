@@ -1,0 +1,133 @@
+@import "normalize.css";
+@import "../fonts/!fonts.css";
+@import "default.scss";
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/backgrounds/welcome-back.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: row;
+
+
+    .login__link {
+        margin-top: 25px;
+        margin-right: 100px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-family: 'Roboto-Medium';
+        
+                    &:hover {
+            color: #88e1d5;
+            background: #fff;
+            transition: .3s all;
+        }
+}
+    
+
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 130px);
+    
+    .section {
+        
+        .infoblock {
+            max-height: 400px;
+            width: 375px;
+            border-radius: 5px;
+            background-color: rgb(252, 252, 252);
+            opacity: 0.851;
+            overflow: hidden;
+            
+            .infoblock__photo {
+                display: flex;
+                justify-content: center;
+                margin: 40px 0 25px 0;
+            
+            .infoblock__photo-author {
+                border-radius: 50%;
+                width: 140px;
+                height: 140px;
+
+            }
+                
+        }
+            
+            .infoblock__name {
+                font-family: 'Roboto-Medium';
+                font-size: 28px;
+                text-align: center;
+                color: #455a64;
+            }
+            
+            .infoblock__desc {
+                text-align: center;
+                font-family: 'Roboto-Regular';
+                color: #455a64;
+                margin: 20px 0 40px 0;
+            }
+            
+            .infoblock__links-container {
+                
+                display: flex;
+                flex-direction: row;
+                
+                .infoblock__links {
+                text-decoration: none;
+                color: #fff;
+                background: #0bac96;
+                width: 125px;
+                text-align: center;
+                font-family: 'Roboto-Medium';
+                font-size: 16px;
+                padding: 20px 0;
+                    
+                    &:hover {
+                        background: #048981;
+                        transition: .3s all;
+                    }
+            }
+                
+            }
+            
+            .infoblock__social {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            
+            .social-svg {
+                height: 31px;
+                width: 20px;
+            }
+        }
+
+        }
+    }
+    
+}
+
+    .footer {      
+        display: flex;
+        justify-content: center;
+        font-family: 'Roboto-Light';
+        color: #fff;
+        
+    }
+
