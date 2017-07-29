@@ -7,6 +7,15 @@
     <link href="./img/faviconmy.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
+   <div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br>Подождите<br><small>идет загрузка</small></div></div>
+    <div class="z-menu" style="display: none;">
+      <div class="menu__container">
+          <a href="works.html" class="menu__container-link">Мои работы</a>
+          <a href="#" class="menu__container-link">Блог</a>
+          <a href="about.html" class="menu__container-link">Обо мне</a>
+          <a href="index.html" class="menu__container-link">Авторизация</a>
+      </div>
+  </div>
    <div class="web">
         <div class="header">
            <div class="header__top">
@@ -34,9 +43,11 @@
                 </div>
             </div>
                         <div class="menu">
-                    <svg class="hamburger">
-                        <use xlink:href="img/icons/sprite.svg#hamburger"></use>
-                    </svg>
+                        <a href="#" class="menu__hamburger-href">
+                            <svg class="hamburger">
+                                <use xlink:href="img/icons/sprite.svg#hamburger"></use>
+                            </svg>
+                        </a>
                 </div>
            </div>
             <div class="header__info-all">
@@ -175,8 +186,16 @@
             </div>
         </div>
 </div>
-<div class="swipe">
-    
+
+
+<div class="swiper__container">
+    <a href="#" class="swipe"></a>
+    <div class="swipe__menu"></div>
 </div>
+
+
+            <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+            <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,11 @@
+$(function(){
+ $('.layer1').plaxmove({ratioH:0.15,ratioV:0.05})
+ $('.layer2').plaxmove({ratioH:0.05,ratioV:0.05})
+ $('.layer3').plaxmove({ratioH:0.05,ratioV:0.15})
+ $('.layer4').plaxmove({ratioH:0.05,ratioV:0.15})
+ $('.layer5').plaxmove({ratioH:0.1,ratioV:0.15})
+ $('.layer6').plaxmove({ratioH:0,ratioV:0.15})
+ $('.layer7').plaxmove({ratioH:0.2,ratioV:0.15})
+ $('.layer8').plaxmove({ratioH:0.2,ratioV:0.15})
+ $('.layer9').plaxmove({ratioH:0.2,ratioV:0.15})
+});

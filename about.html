@@ -7,6 +7,15 @@
     <link href="./img/faviconmy.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
+   <div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br>Подождите<br><small>идет загрузка</small></div></div>
+       <div class="z-menu" style="display: none;">
+      <div class="menu__container">
+          <a href="works.html" class="menu__container-link">Мои работы</a>
+          <a href="#" class="menu__container-link">Блог</a>
+          <a href="about.html" class="menu__container-link">Обо мне</a>
+          <a href="index.html" class="menu__container-link">Авторизация</a>
+      </div>
+  </div>
     <div class="header">
        <div class="header__top works__header-top">
         <div class="header__social">
@@ -33,20 +42,22 @@
             </div>
         </div>
                     <div class="menu">
-                <svg class="hamburger">
-                    <use xlink:href="img/icons/sprite.svg#hamburger"></use>
-                </svg>
-            </div>
+                        <a href="#" class="menu__hamburger-href">
+                            <svg class="hamburger">
+                                <use xlink:href="img/icons/sprite.svg#hamburger"></use>
+                            </svg>
+                        </a>
+                    </div>
        </div>
         <div class="header__info-all works__header-infoall">
-            <div class="header__photo">
-                    <img src="img/content/me.jpg" alt="" class="header__photo-author">
-            </div>
-            <div class="header__about works__header-about">
-                <div class="header__name works__header-name">Даниил Лавренчук</div>
-                <div class="header__desc works__header-desc">Личный сайт веб разработчика</div>
-            </div>
-    </div>
+                <div class="header__photo">
+                        <img src="img/content/me.jpg" alt="" class="header__photo-author">
+                </div>
+                <div class="header__about works__header-about">
+                    <div class="header__name works__header-name">Даниил Лавренчук</div>
+                    <div class="header__desc works__header-desc">Личный сайт веб разработчика</div>
+                </div>
+        </div>
            <div class="arrow__header-svg">
                 <svg class="header__social-svg socials__vk-svg">
                     <use xlink:href="img/icons/sprite.svg#arrow__header"></use>
@@ -118,8 +129,8 @@
                                 <div class="skills__direction">
                                     <div class="direction__title">Frontend</div>
                                     <div class="direction__svg">
-                                       <div class="direction__svg-stack">HTML 5</div>
                                        <div class="direction__svg-html5">
+                                        <div class="direction__svg-stack">HTML 5</div>
                                            <svg width="270" height="270" class="g-circles">
                                                  <circle r="60" cx="135" cy="135" stroke="#ccc"
                                                 fill="none" />
@@ -247,6 +258,9 @@
 
             </div>
             
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+<script type="text/javascript" src="js/main.js"></script>
 
 
 </body>

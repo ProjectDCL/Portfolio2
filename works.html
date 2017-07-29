@@ -7,6 +7,15 @@
     <link href="./img/faviconmy.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
+   <div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br>Подождите<br><small>идет загрузка</small></div></div>
+       <div class="z-menu" style="display: none;">
+      <div class="menu__container">
+          <a href="works.html" class="menu__container-link">Мои работы</a>
+          <a href="#" class="menu__container-link">Блог</a>
+          <a href="about.html" class="menu__container-link">Обо мне</a>
+          <a href="index.html" class="menu__container-link">Авторизация</a>
+      </div>
+  </div>
     <div class="header">
        <div class="header__top works__header-top">
         <div class="header__social">
@@ -33,10 +42,12 @@
             </div>
         </div>
                     <div class="menu">
-                <svg class="hamburger">
-                    <use xlink:href="img/icons/sprite.svg#hamburger"></use>
-                </svg>
-            </div>
+                        <a href="#" class="menu__hamburger-href">
+                            <svg class="hamburger">
+                                <use xlink:href="img/icons/sprite.svg#hamburger"></use>
+                            </svg>
+                        </a>
+                    </div>
        </div>
         <div class="header__info-all works__header-infoall">
             <div class="header__photo">
@@ -71,33 +82,69 @@
        <div class="works__title">
            <div class="works__title-text">Мои работы</div>
        </div>
-       <div class="works__block">
-           <div class="works__school">
-               <div class="school__title">Сайт школы онлайн образования</div>
-               <div class="school__desc">Html, css, javascript</div>
-               <a href="" class="school__link">
-               <i class="fa fa-link" aria-hidden="true"></i>
-               Посмотреть сайт
-               </a>
-           </div>
-           <div class="works__slider">
-               <div class="slider__photo-current">
-                   <img style="max-width: 90%;" src="img/content/slider-current.png" alt="slider current" class="current__photo">
-               </div>
-               <div class="slider__photo__else">
-                   <div class="photo__else-prev">
-                        <svg class="header__social-svg socials__git-svg">
-                            <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
-                        </svg>
+       <ul class="works__block">
+          <li class="works__li">
+                   <div class="works__slider">
+                       <div class="slider__photo-current">
+                           <img style="max-width: 90%; position: absolute; bottom: -1%;" src="img/backgrounds/work-1.png" alt="slider current" class="current__photo">
+                       </div>
                    </div>
-                   <div class="photo__else-next">
-                        <svg class="header__social-svg socials__git-svg">
-                            <use xlink:href="img/icons/sprite.svg#arrow-up"></use>
-                        </svg>
+                    <div class="works__school">
+                       <div class="school__title">Сайт школы онлайн образования</div>
+                           <div class="school__desc">Html, css, javascript</div>
+                               <a href="" class="school__link">
+                                   <i class="fa fa-link" aria-hidden="true"></i>
+                                     Посмотреть сайт
+                               </a>
                    </div>
-               </div>
-           </div>
-       </div>
+           </li>
+            <li class="works__li">
+                   <div class="works__slider">
+                       <div class="slider__photo-current">
+                           <img style="max-width: 90%; position: absolute; bottom: -1%;" src="img/backgrounds/work-2.png" alt="slider current" class="current__photo">
+                       </div>
+                   </div>
+                    <div class="works__school">
+                       <div class="school__title">IT Loft</div>
+                           <div class="school__desc">Html, css, javascript, PHP</div>
+                               <a href="" class="school__link">
+                                   <i class="fa fa-link" aria-hidden="true"></i>
+                                     Посмотреть сайт
+                               </a>
+                   </div>
+           </li>
+           <li class="works__li">
+                   <div class="works__slider">
+                       <div class="slider__photo-current">
+                           <img style="max-width: 90%; position: absolute; bottom: -1%;" src="img/backgrounds/work-3.png" alt="slider current" class="current__photo">
+                       </div>
+                   </div>
+                    <div class="works__school">
+                       <div class="school__title">The loft blog</div>
+                           <div class="school__desc">Html, css, javascript, design</div>
+                               <a href="" class="school__link">
+                                   <i class="fa fa-link" aria-hidden="true"></i>
+                                     Посмотреть сайт
+                               </a>
+                   </div>
+           </li>
+           <li class="works__li">
+                   <div class="works__slider">
+                       <div class="slider__photo-current">
+                           <img style="max-width: 90%; position: absolute; bottom: -1%;" src="img/backgrounds/work-4.png" alt="slider current" class="current__photo">
+                       </div>
+                   </div>
+                    <div class="works__school">
+                       <div class="school__title">Atmo yoga</div>
+                           <div class="school__desc">Html, css, javascript, idea</div>
+                               <a href="" class="school__link">
+                                   <i class="fa fa-link" aria-hidden="true"></i>
+                                     Посмотреть сайт
+                               </a>
+                   </div>
+           </li>
+           
+       </ul>
 
     <div class="works__aboutme">
         <div class="aboutme__title">
@@ -152,11 +199,11 @@
                 </div>
             </div>
 
-           <div class="works__arrow">
+           <a  href="#" class="works__arrow">
                 <svg class="works__arrow-svg" style="width: 31px; height: 25px;">
                     <use xlink:href="img/icons/sprite.svg#arrow__header"></use>
                 </svg>
-           </div>
+           </a>
            
     <div class="blog__footer works__footer">
        <div class="footer__commercial-links">
@@ -208,6 +255,12 @@
         </div>
     </div>
 
+
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
 
 
 </body>

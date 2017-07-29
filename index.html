@@ -8,45 +8,121 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="./img/faviconmy.ico" rel="shortcut icon" type="image/x-icon">
 </head>
-<body>
-        <div class="wrapper">
+<body style="overflow: hidden;">
+
+<div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br>Подождите<br><small>идет загрузка</small></div></div>
+
+
+<div class="wrapper">
+
+
+
+
+
+              
+              <div class="layer1" style="top: 70%; left: -20%; "></div>
+              <div class="layer2" style="top: 70%; left: 50%; "></div>
+              <div class="layer3" style="top: 70%; left: -5%; "></div>
+              <div class="layer4" style="top: 40%; left: 25%; "></div>
+              <div class="layer5" style="top: 40%; left: 0%; "></div>
+              <div class="layer6" style="top: 5%; left:  0%; "></div>
+              <div class="layer7" style="top: -10%; left:  30%; "></div>
+              <div class="layer8" style="top: 10%; left:  0%; "></div>
+              <div class="layer9" style="top: 10%; left:  0%; "></div>
+              
                <div class="login">
                    <a href="#" class="login__link">Авторизоваться</a>
                </div>
             <div class="container">
-                                <div class="infoblock">
-                                    <div class="infoblock__photo">
-                                        <img src="img/content/me.jpg" alt="" class="infoblock__photo-author">
-                                    </div>
-                                    <div class="infoblock__name">Даниил Лавренчук</div>
-                                    <div class="infoblock__desc">Личный сайт веб разработчика</div>
-                                    <div class="infoblock__social">
-                                        <div class="socials__vk">
-                                               <a href="https://vk.com/daniilcrezu">
-                                                    <svg class="social-svg socials__vk-svg">
-                                                        <use xlink:href="img/icons/sprite.svg#vk"></use>
-                                                    </svg>
-                                                </a>
+                               <div class="infoblock__welcome" ontouchstart="this.classList.toggle('hover');">
+                                    <div class="infoblock">
+                                       <div class="front">
+                                            <div class="infoblock__photo">
+                                                <img src="img/content/me.jpg" alt="" class="infoblock__photo-author">
+                                            </div>
+                                            <div class="infoblock__name">Даниил Лавренчук</div>
+                                            <div class="infoblock__desc">Личный сайт веб разработчика</div>
+                                            <div class="infoblock__social">
+                                                <div style="margin-right: 0px;" class="socials__vk">
+                                                       <a href="https://vk.com/daniilcrezu">
+                                                            <svg class="social-svg socials__vk-svg">
+                                                                <use xlink:href="img/icons/sprite.svg#vk"></use>
+                                                            </svg>
+                                                        </a>
+                                                </div>
+                                                <div style="margin-right: 0px;" class="socials__git">
+                                                       <a href="https://github.com/ProjectDCL">
+                                                            <svg class="social-svg socials__git-svg">
+                                                                <use xlink:href="img/icons/sprite.svg#git"></use>
+                                                            </svg>
+                                                        </a>
+                                                </div>
+                                                <div style="margin-right: 0px;" class="socials__in">
+                                                       <a href="https://www.instagram.com/project_crez/">
+                                                            <svg class="social-svg socials__in-svg">
+                                                                <use xlink:href="img/icons/sprite.svg#in"></use>
+                                                            </svg>
+                                                        </a>
+                                                </div>
+                                            </div>
+                                            <div class="infoblock__links-container">
+                                                <a href="works.html" class="infoblock__links links__works">Мои работы</a>
+                                                <a href="about.html" class="infoblock__links links__about">Обо мне</a>
+                                                <a href="blog.html" class="infoblock__links links__blog">Блог</a>
+                                            </div>
                                         </div>
-                                        <div class="socials__git">
-                                               <a href="https://github.com/ProjectDCL">
-                                                    <svg class="social-svg socials__git-svg">
-                                                        <use xlink:href="img/icons/sprite.svg#git"></use>
-                                                    </svg>
-                                                </a>
+                                        <div class="back">
+                                            <div class="back__title">Авторизируйтесь</div>
+                                                <form id="auth__form" class="back__form">
+
+                                                    <label for="" class="form__login">
+                                                        <span class="form__login-icon">
+                                                            <span class="icon">
+                                                                <i class="fa fa-user-o" aria-hidden="true"></i>
+                                                            </span>
+                                                        </span>
+                                                        <input class="form-input" name="login" type="text" placeholder="Логин">
+                                                    </label>
+                                                    <label for="" class="form__login">
+                                                        <span class="form__login-icon">
+                                                            <span class="icon">
+                                                                <i class="fa fa-key" aria-hidden="true"></i>
+                                                            </span>
+                                                        </span>
+                                                        <input class="form-input" name="name" type="text" placeholder="Пароль">
+                                                    </label>
+
+                                                   
+                                                   <div class="checkbox">
+                                                            <input id="check" class="order__radio-elem" name="callback" type="checkbox">
+                                                            <label class="order__people" for="check">
+                                                                        Я человек
+                                                                        
+                                                            </label>
+                                                      </div>
+                                                       <div class="robot__title">Вы точно не робот?</div>
+                                                    <div class="robot__confirm">   
+                                                           <div class="checkbox radio">
+                                                                <input id="check_yep" class="order__radio-elem" name="callback" type="checkbox">
+                                                                <label class="robot__label" for="check_yep">
+                                                                            Да
+
+                                                                </label>
+                                                          </div>
+                                                          <div class="checkbox radio">
+                                                                <input id="check" class="order__radio-elem" name="callback" type="checkbox">
+                                                                <label class="robot__label" for="check">
+                                                                            Не уверен
+
+                                                                </label>
+                                                          </div>
+                                                      </div>
+                                                </form>
+                                            <div class="infoblock__links-container" style="margin-top: 30px;">
+                                                <a style="width: 50%;" href="#" class="infoblock__links links__works">На главную</a>
+                                                <a style="width: 50%;" href="#" class="infoblock__links links__blog">Войти</a>
+                                            </div>
                                         </div>
-                                        <div class="socials__in">
-                                               <a href="https://www.instagram.com/project_crez/">
-                                                    <svg class="social-svg socials__in-svg">
-                                                        <use xlink:href="img/icons/sprite.svg#in"></use>
-                                                    </svg>
-                                                </a>
-                                        </div>
-                                    </div>
-                                    <div class="infoblock__links-container">
-                                        <a href="works.html" class="infoblock__links links__works">Мои работы</a>
-                                        <a href="about.html" class="infoblock__links links__about">Обо мне</a>
-                                        <a href="blog.html" class="infoblock__links links__blog">Блог</a>
                                     </div>
                                 </div>
             </div>        
@@ -54,5 +130,10 @@
                         &copy; Даниил Лавренчук | создано с любовью в LoftSchool | 2017 
                 </div>
             </div>
+            
+            <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+            <script type="text/javascript" src="js/jquery.plaxmove.js"></script>
+            <script type="text/javascript" src="js/plax.js"></script>
 </body>
 </html>
